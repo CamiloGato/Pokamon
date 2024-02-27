@@ -1,17 +1,16 @@
 ﻿using System;
-using UnityEngine;
 
 namespace Pokemon
 {
     [Serializable]
-    public class PokemonData
+    class PokemonData
     {
-        public string Name;
-        public int Level;
-        public int Life;
-        public Sprite Sprite;
+        public int currentLevel;
+        public int currentLife;
+        public PokemonDataBase PokemonDataBase;
 
-        private int _maxLife;
-        public int MaxLife => Level * Life;
+        public int Attack => currentLevel * PokemonDataBase.Attributes.Attack;
+        public int Defense => currentLevel * PokemonDataBase.Attributes.Defense;
+        public int MaxLife => currentLevel * PokemonDataBase.Attributes.HP;
     }
 }

@@ -12,10 +12,10 @@ namespace UI.Controllers
 
         public void Start()
         {
-            pokemonView.ChangeName(pokemonData.Name);
-            pokemonView.ChangeLevel(pokemonData.Level);
-            pokemonView.ChangeLife(pokemonData.Life, pokemonData.MaxLife);
-            pokemonView.ChangeImage(pokemonData.Sprite);
+            pokemonView.ChangeName(pokemonData.PokemonDataBase.Name);
+            pokemonView.ChangeLevel(pokemonData.currentLevel);
+            pokemonView.ChangeLife(pokemonData.currentLife, pokemonData.MaxLife);
+            pokemonView.ChangeImage(pokemonData.PokemonDataBase.FrontSprite);
         }
 
     }
