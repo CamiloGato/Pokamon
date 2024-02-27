@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 450495355b164dc082b183b2c089942b, type: 3}
-  m_Name: Squirtle
+  m_Name: Pokemon
   m_EditorClassIdentifier: 
-  Name: Squirtle
+  Name: 
   Attributes:
-    HP: 3
-    Attack: 3
-    Defense: 3
-  FrontSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  BackSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    HP: 0
+    Attack: 0
+    Defense: 0
+  FrontSprite: {fileID: 0}
+  BackSprite: {fileID: 0}
