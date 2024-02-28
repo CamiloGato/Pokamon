@@ -8,8 +8,19 @@ namespace Pokemon
     {
         public string Name;
         public PokemonAttributes Attributes;
+        public PokemonType Type;
         public Sprite FrontSprite;
         public Sprite BackSprite;
+    }
+
+    [Serializable]
+    public enum PokemonType
+    {
+        Ice,
+        Bug,
+        Rock,
+        Poison,
+        Grass 
     }
     
     [Serializable]

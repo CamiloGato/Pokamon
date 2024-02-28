@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 450495355b164dc082b183b2c089942b, type: 3}
-  m_Name: Pokemon
+  m_Name: Charmileon
   m_EditorClassIdentifier: 
   Name: 
   Attributes:

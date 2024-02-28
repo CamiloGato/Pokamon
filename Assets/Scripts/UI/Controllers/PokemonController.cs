@@ -10,12 +10,18 @@ namespace UI.Controllers
         [SerializeField] private PokemonData pokemonData;
         [SerializeField] private PokemonView pokemonView;
 
-        public void Start()
+        [ContextMenu("SetUp")]
+        public void SetUp()
         {
-            pokemonView.ChangeName(pokemonData.PokemonDataBase.Name);
-            pokemonView.ChangeLevel(pokemonData.currentLevel);
-            pokemonView.ChangeLife(pokemonData.currentLife, pokemonData.MaxLife);
-            pokemonView.ChangeImage(pokemonData.PokemonDataBase.FrontSprite);
+            if (pokemonData.PokemonType == PokemonType.Ice)
+            {
+                Debug.Log("Estas ardido");
+            }
+            
+            pokemonView.ChangeName(pokemonData.Name);
+            pokemonView.ChangeLevel(pokemonData.CurrentLevel);
+            pokemonView.ChangeLife(pokemonData.CurrentLife, pokemonData.MaxLife);
+            pokemonView.ChangeImage(pokemonData.CurrentSprite);
         }
 
     }

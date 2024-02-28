@@ -632,9 +632,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonData:
-    currentLevel: 10
-    currentLife: 10
-    PokemonDataBase: {fileID: 11400000, guid: 0265d33a21ef2134d933bd72f74f2242, type: 2}
+    _isPlayer: 1
+    _currentLevel: 10
+    _currentLife: 15
+    _pokemonDataBase: {fileID: 11400000, guid: 0265d33a21ef2134d933bd72f74f2242, type: 2}
   pokemonView: {fileID: 1014800056}
 --- !u!1 &519420028
 GameObject:
